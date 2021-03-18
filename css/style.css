@@ -109,7 +109,7 @@ header{
   header{
     /*Your code here again.*/
     flex-direction: row;
-    align-items: left;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -129,6 +129,11 @@ header{
 /*Requirement 12*/
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
+@media screen and (prefers-reduced-motion: reduce){
+  #logo{
+    animation: none;
+  }
+}
 
 
 
@@ -149,7 +154,7 @@ header{
   }
   /*Requirement 16*/
   .price{
-    align-content: bottom;
+    align-items:flex-end;
   }
   /*Requirement 17*/
   .package{
